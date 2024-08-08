@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.dropdown-menu{
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.dropdown-menu.show {
+    max-height: 500px; /* Adjust according to your content size */
+    opacity: 1;
+  }
